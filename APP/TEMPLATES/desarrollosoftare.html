@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid testimonial pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Desarrollo de Software</h4>
+            <h1 class="display-5 mb-4">Plasma tu idea en lo que nececitas</h1>
+            <p class="mb-0">En Code Cats Studios, transformamos tus ideas en soluciones de software a medida que se adaptan a tus necesidades específicas.
+            </p>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-laptop-code fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0"> Ofrecemos desarrollo de aplicaciones web modernas y escalables, diseñadas para funcionar perfectamente en todos los navegadores y dispositivos. Utilizamos las últimas tecnologías y mejores prácticas para crear soluciones que no solo son funcionales, sino también atractivas y fáciles de usar.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Desarrollo de Aplicaciones Web</h4>
+                    </div>
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-desktop fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">Creamos aplicaciones de escritorio eficientes, adaptadas a las necesidades específicas de tu negocio. Nuestras soluciones abarcan desde pequeñas implementaciones hasta aplicaciones personalizadas para mejorar la productividad y eficiencia de tu equipo.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Desarrollo de Aplicaciones de Escritorio</h4>
+                    </div>
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-server fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">Proveemos soluciones de software que se pueden implementar en entornos locales, asegurando que tengas control total sobre tus datos y sistemas. Nuestras implementaciones son seguras, eficientes y diseñadas para integrarse perfectamente con tu infraestructura existente.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Implementación en Entornos Locales</h4>
+                    </div>
+
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                   <i class="fa-solid fa-cogs fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">Trabajamos estrechamente contigo para entender tus necesidades y desarrollar soluciones de software personalizadas que se adapten perfectamente a tu negocio. Desde la planificación y el diseño hasta el desarrollo y la implementación, nuestro equipo se encarga de todo el proceso para asegurar que obtengas una solución que realmente te beneficie.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Soluciones Personalizadas</h4>
+                    </div>
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+        </div>
+        <br>
+        <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'services' %}">
+                <i class="fa-solid fa-rotate-left"></i> Regresar
+        </a>
+    </div>
+</div>
+
+{% endblock %}

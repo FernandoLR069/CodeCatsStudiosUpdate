@@ -1,0 +1,43 @@
+{% load static %}
+
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="/" class="navbar-brand p-0">
+            <h1 class="text-primary"><i class="fa-solid fa-code"></i> Code Cats Studios</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="/" class="nav-item nav-link active">Inicio</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link">Información</a>
+                <a href="{% url 'services' %}" class="nav-item nav-link">Servicios</a>
+                <a href="{% url 'services' %}" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Productos</a>
+            </div>
+            <a href="{% url 'contact' %}" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Contacto</a>
+        </div>
+    </nav>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Productos</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-center mb-3">
+          <img src="{% static 'img/matenimiento.png' %}"  alt="Imagen de mantenimiento" class="img-fluid">
+        </div>
+         <h4 class="text-primary" align="center">¡Lo sentimos este apartado esta en mantenimiento!</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>

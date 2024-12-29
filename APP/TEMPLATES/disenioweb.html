@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid testimonial pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Diseño Web</h4>
+            <h1 class="display-5 mb-4">Diseño que se adapata a tu estilo</h1>
+            <p class="mb-0">En Code Cats Studios, entendemos que tu sitio web es una extensión vital de tu marca. Por eso, nos especializamos en crear diseños web únicos y atractivos que capturan la esencia de tu negocio y te diferencian de la competencia.
+            </p>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-paintbrush fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">Creamos sitios web únicos que reflejan la identidad de tu marca, asegurando que tu presencia en línea sea memorable y distinta de la competencia.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Diseño Personalizado</h4>
+                    </div>
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-mobile-alt fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">Aseguramos que tu sitio web se vea y funcione perfectamente en todos los dispositivos, proporcionando una experiencia de usuario coherente y optimizada.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Optimización</h4>
+                    </div>
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-user-friends fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">Diseñamos interfaces intuitivas que mejoran la navegación y retienen a los visitantes, centrando nuestro enfoque en la usabilidad y la accesibilidad.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Experiencia de Usuario</h4>
+                    </div>
+
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-plug fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">Incorporamos las últimas tecnologías y herramientas para un rendimiento óptimo, incluyendo aplicaciones de terceros y soluciones de comercio electrónico.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Integración de Herramientas</h4>
+                    </div>
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+        </div>
+        <br>
+        <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'services' %}">
+            <i class="fa-solid fa-rotate-left"></i> Regresar
+        </a>
+    </div>
+</div>
+
+
+{% endblock %}

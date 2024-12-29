@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- About Start -->
+<div class="container-fluid about py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <!-- Text Content -->
+            <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+                <div>
+                    <h4 class="text-primary text-uppercase fw-bold mb-4">¿Qué es Code Cats Studios?</h4>
+                    <h1 class="display-5 mb-4">Tu aliado en tecnología</h1>
+                    <p class="mb-4">
+                        Code Cats Studios es más que una empresa de desarrollo de software; es un aliado tecnológico para todos.
+                        Nos especializamos en ofrecer servicios a empresas, negocios locales y emprendedores que buscan promover sus servicios
+                        o proteger su información con tecnología avanzada y accesible.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="fas fa-rocket fa-3x text-primary"></i>
+                                <div class="ms-4">
+                                    <h4>Misión</h4>
+                                    <p>
+                                        Proporcionar soluciones innovadoras y accesibles en software, empoderando pequeños negocios y emprendedores.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="fas fa-eye fa-3x text-primary"></i>
+                                <div class="ms-4">
+                                    <h4>Visión</h4>
+                                    <p>
+                                        Ser tus aliados en desarrollo de software, facilitando la tecnología a todos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="{% url 'contact' %}" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Contáctanos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Content -->
+            <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="bg-primary rounded position-relative overflow-hidden">
+                    <div class="rounded-bottom">
+                        <img src="{% static 'img/des004.jpeg' %}" class="img-fluid rounded-bottom w-100" alt="Nuestro Equipo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+{% endblock %}

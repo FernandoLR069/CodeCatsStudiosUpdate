@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid testimonial pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Servidores en la Nube</h4>
+            <h1 class="display-5 mb-4">Tus archivos siempre al alcance</h1>
+            <p class="mb-0">En Code Cats Studios, proporcionamos servidores para administrar tus archivos de manera segura y eficaz.
+            </p>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-hdd fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">Ofrecemos opciones de almacenamiento que se ajustan a tus necesidades, desde pequeñas cantidades hasta grandes capacidades de grandes volumnes.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Almacenamiento Escalable</h4>
+                    </div>
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-memory fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">Asignación de memoria escalable según tus nececidades.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Memoria RAM Personalizable</h4>
+                    </div>
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-server fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0"> Ofrecemos servidores privados virtuales (VPS) que proporcionan flexibilidad y control total sobre tus archivos.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Servidores VPS</h4>
+                    </div>
+
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                   <i class="fa-solid fa-server fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">Elige servidores dedicados, ya sean virtuales o físicos, para un rendimiento máximo y seguridad de datos.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Servidores Dedicados</h4>
+                    </div>
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                   <i class="fa-solid fa-cogs fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">Interfaz intuitiva facilita la gestión de tus archivos y usuarios, mejorando la colaboración y acceso a la información.
+                    </p>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Gestión Sencilla</h4>
+                    </div>
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-quote-left">
+                </div>
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-bars-progress fa-3x mb-3"></i>
+                </div>
+                <div class="testimonial-text">
+                    <p class="mb-0">A diferencia de otros, tienes control completo sobre todos los aspectos del entorno de almacenamiento, incluyendo:
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'servers-info' %}">
+                    <i class="fa-solid fa-eye"></i> Descubrir
+                </a>
+                </div>
+                <div class="testimonial-title">
+                    <div>
+                        <h4 class="mb-0">Control Total Sobre tu Servidor</h4>
+                    </div>
+                </div>
+                <div class="testimonial-quote-right">
+                </div>
+            </div>
+        </div>
+        <br>
+        <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'services' %}">
+            <i class="fa-solid fa-rotate-left"></i> Regresar
+        </a>
+    </div>
+</div>
+
+
+
+{% endblock %}

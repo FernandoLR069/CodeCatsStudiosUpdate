@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Services Start -->
+<div class="container-fluid service pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Servicios</h4>
+            <h1 class="display-5 mb-4">Brindamos servicios de calidad</h1>
+            <p class="mb-0">En Code Cats Studios, ofrecemos servicios diseñados para impulsar tu presencia digital y optimizar tus operaciones. Nuestro equipo de expertos está listo para ayudarte con soluciones personalizadas que se adaptan a tus necesidades.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'img/des006.jpeg' %}" class="img-fluid rounded-top w-100" alt="Image">
+                    </div>
+                    <div class="rounded-bottom p-4">
+                        <a class="h4 d-inline-block mb-4">Diseño Web</a>
+                        <p class="mb-4">Nos adapatamos a tus ideas para sastifacer tus especificaciones y llevar tu negocio al siguiente nivel, diseños que se adaptan a tu propia creatividad.
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'desing-web' %}">Descubrir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'img/des0012.jpeg' %}" class="img-fluid rounded-top w-100" alt="Image">
+                    </div>
+                    <div class="rounded-bottom p-4">
+                        <a class="h4 d-inline-block mb-4">Desarrollo de Software</a>
+                        <p class="mb-4">Desarrollamos software a medida para satisfacer las necesidades específicas de tu empresa, asegurando soluciones seguras y eficientes.
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'software-development' %}">Descubrir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'img/des005.jpeg' %}" class="img-fluid rounded-top w-100" alt="Image">
+                    </div>
+                    <div class="rounded-bottom p-4">
+                        <a class="h4 d-inline-block mb-4">Servidores en la Nube</a>
+                        <p class="mb-4">Ofrecemos aplicaciones de servidores en la nube con ownCloud, permitiéndote gestionar y almacenar tus datos de manera segura y accesible.
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'servers' %}">Descubrir</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+{% endblock %}

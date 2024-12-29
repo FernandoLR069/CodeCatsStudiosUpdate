@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container mt-5">
+    <h1 class="text-center">Mensajes</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Correo Electrónico</th>
+                        <th>Mensaje</th>
+                    </tr>
+                </thead>
+                <tbody id="mensajes-body">
+                    <!-- Los datos se llenarán aquí mediante JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('/ver_mensajes/')  // Cambiado a la URL correcta para tu API
+        .then(response => response.json())
+        .then(data => {
+            const tbody = document.getElementById('mensajes-body');
+            tbody.innerHTML = '';  // Limpiar el contenido existente
+
+            data.forEach(mensaje => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${mensaje.id}</td>
+                    <td>${mensaje.nombres}</td>
+                    <td>${mensaje.telefono}</td>
+                    <td>${mensaje.correo}</td>
+                    <td>${mensaje.mensaje}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        })
+        .catch(error => console.error('Error:', error));
+});
+</script>
+
+{% endblock %}
