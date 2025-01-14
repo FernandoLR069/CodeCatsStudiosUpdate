@@ -1,0 +1,285 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<!-- Pages web Start -->
+<div class="container-fluid blog py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Páginas Web</h4>
+            <h1 class="display-5 mb-4">Impulsa tu negocio o tus servicios al siguiente nivel</h1>
+            <p class="mb-0">Dale ese plus a tu negocio o servicios con las diferentes opciones para llevarlo al máximo.
+            </p>
+        </div>
+        <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+            <div class="blog-item p-4">
+                <div class="blog-img mb-4">
+                    <img src="{% static 'img/desing_01.jpeg' %}" class="img-fluid w-100 rounded" alt="">
+                    <div class="blog-title">
+                        <a href="{% url 'services' %}" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropChibi">Contactar</a>
+                    </div>
+                </div>
+                <a class="h4 d-inline-block mb-3">Paquete Chibi</a>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Diseño web básico (5 secciones: Inicio, Servicios, Contacto, Galería, Nosotros).
+                </p>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Hosting (VPS) y dominio.
+                </p>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Soporte básico.
+                </p>
+                <div class="d-flex align-items-center">
+                    <img src="{% static 'img/tips_01.png' %}" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                    <div class="ms-3">
+                        <h5>
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            Adicionales
+                        </h5>
+                        <p class="mb-0">
+                           <i class="fa-regular fa-font-awesome"></i>
+                            Diseño de logotipo.
+                        </p>
+                        <p class="mb-0">
+                            <i class="fa-solid fa-images"></i>
+                            Diseño de galería personalizado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-item p-4">
+                <div class="blog-img mb-4">
+                    <img src="{% static 'img/desing_02.jpeg' %}" class="img-fluid w-100 rounded" alt="">
+                    <div class="blog-title">
+                        <a href="{% url 'services' %}" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropSenpai">Contactar</a>
+                    </div>
+                </div>
+                <a class="h4 d-inline-block mb-3">Paquete Senpai </a>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Diseño web avanzado (5 secciones + funcionalidades adicionales: Formularios de contacto, mapas, integración con redes sociales).
+                </p>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Hosting (VPS) y dominio.
+                </p>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Soporte técnico extendido.
+                </p>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Correo electrónico corporativo.
+                </p>
+                <div class="d-flex align-items-center">
+                    <img src="{% static 'img/tips_01.png' %}" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                    <div class="ms-3">
+                          <h5>
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            Adicionales
+                        </h5>
+                        <p class="mb-0">
+                           <i class="fa-regular fa-font-awesome"></i>
+                            Diseño de logotipo.
+                        </p>
+                        <p class="mb-0">
+                            <i class="fa-solid fa-images"></i>
+                            Diseño de galería personalizado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-item p-4">
+                <div class="blog-img mb-4">
+                    <img src="{% static 'img/desing_03.jpeg' %}" class="img-fluid w-100 rounded" alt="">
+                    <div class="blog-title">
+                        <a href="{% url 'services' %}" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropKaiju">Contactar</a>
+                    </div>
+                </div>
+                <a class="h4 d-inline-block mb-3">Paquete Kaiju </a>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Diseño web avanzado + funcionalidades personalizadas.
+                </p>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Hosting (VPS) y dominio.
+                </p>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Correo electrónico corporativo.
+                </p>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Soporte técnico extendido.
+                </p>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Mantenimiento y actualizaciones.
+                </p>
+                <div class="d-flex align-items-center">
+                    <img src="{% static 'img/tips_01.png' %}" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                    <div class="ms-3">
+                          <h5>
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            Adicionales
+                        </h5>
+                        <p class="mb-0">
+                           <i class="fa-regular fa-font-awesome"></i>
+                            Diseño de logotipo.
+                        </p>
+                        <p class="mb-0">
+                            <i class="fa-solid fa-images"></i>
+                            Diseño de galería personalizado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'products-info' %}">
+            <i class="fa-solid fa-rotate-left"></i> Regresar
+        </a>
+    </div>
+</div>
+
+<!-- Pages web End -->
+
+
+<!-- Modal Paquete Chibi -->
+<div class="modal fade" id="staticBackdropChibi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Encabezado del modal -->
+      <div class="modal-header bg-primary text-white d-flex justify-content-center position-relative">
+        <h5 class="modal-title mx-auto" id="staticBackdropLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Cuerpo del modal -->
+      <div class="modal-body">
+        <form method="POST" action="{% url 'enviar_mensaje_contacto' %}">
+          {% csrf_token %}
+            <h4 class="text-primary">Paquete Chibi</h4>
+          <!-- Campo Nombre -->
+          <div class="form-floating mb-3">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+            <label for="name"><i class="fa-solid fa-user me-2"></i>Nombre</label>
+          </div>
+          <!-- Campo Correo -->
+          <div class="form-floating mb-3">
+            <input type="email" name="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+            <label for="email"><i class="fa-solid fa-envelope me-2"></i>Correo</label>
+          </div>
+          <!-- Campo Teléfono -->
+          <div class="form-floating mb-3">
+            <input type="tel" name="telefono" class="form-control" id="telefono" placeholder="(000) 000 0000" required>
+            <label for="telefono"><i class="fa-solid fa-phone me-2"></i>Teléfono</label>
+          </div>
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Pie del modal -->
+      <div class="modal-footer">
+        <p class="text-muted small text-center w-100 mb-0">Nos pondremos en contacto contigo lo antes posible.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Paquete Senpai -->
+<div class="modal fade" id="staticBackdropSenpai" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Encabezado del modal -->
+      <div class="modal-header bg-primary text-white d-flex justify-content-center position-relative">
+        <h5 class="modal-title mx-auto" id="staticBackdropLabelSenpai"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Cuerpo del modal -->
+      <div class="modal-body">
+        <form method="POST" action="{% url 'enviar_mensaje_contacto_web_desing_senpai' %}">
+          {% csrf_token %}
+            <h4 class="text-primary">Paquete Senpai</h4>
+          <!-- Campo Nombre -->
+          <div class="form-floating mb-3">
+            <input type="text" name="name" class="form-control" id="name_senpai" placeholder="Nombre" required>
+            <label for="name"><i class="fa-solid fa-user me-2"></i>Nombre</label>
+          </div>
+          <!-- Campo Correo -->
+          <div class="form-floating mb-3">
+            <input type="email" name="email" class="form-control" id="email_senpai" placeholder="Correo Electrónico" required>
+            <label for="email"><i class="fa-solid fa-envelope me-2"></i>Correo</label>
+          </div>
+          <!-- Campo Teléfono -->
+          <div class="form-floating mb-3">
+            <input type="tel" name="telefono" class="form-control" id="telefono_senpai" placeholder="(000) 000 0000" required>
+            <label for="telefono"><i class="fa-solid fa-phone me-2"></i>Teléfono</label>
+          </div>
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Pie del modal -->
+      <div class="modal-footer">
+        <p class="text-muted small text-center w-100 mb-0">Nos pondremos en contacto contigo lo antes posible.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Paquete Kaiju -->
+<div class="modal fade" id="staticBackdropKaiju" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Encabezado del modal -->
+      <div class="modal-header bg-primary text-white d-flex justify-content-center position-relative">
+        <h5 class="modal-title mx-auto" id="staticBackdropLabelKaiju"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Cuerpo del modal -->
+      <div class="modal-body">
+        <form method="POST" action="{% url 'enviar_mensaje_contacto_web_desing_kaiju' %}">
+          {% csrf_token %}
+            <h4 class="text-primary">Paquete Kaiju</h4>
+          <!-- Campo Nombre -->
+          <div class="form-floating mb-3">
+            <input type="text" name="name" class="form-control" id="name_kaiju" placeholder="Nombre" required>
+            <label for="name"><i class="fa-solid fa-user me-2"></i>Nombre</label>
+          </div>
+          <!-- Campo Correo -->
+          <div class="form-floating mb-3">
+            <input type="email" name="email" class="form-control" id="email_kaiju" placeholder="Correo Electrónico" required>
+            <label for="email"><i class="fa-solid fa-envelope me-2"></i>Correo</label>
+          </div>
+          <!-- Campo Teléfono -->
+          <div class="form-floating mb-3">
+            <input type="tel" name="telefono" class="form-control" id="telefono_kaiju" placeholder="(000) 000 0000" required>
+            <label for="telefono"><i class="fa-solid fa-phone me-2"></i>Teléfono</label>
+          </div>
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Pie del modal -->
+      <div class="modal-footer">
+        <p class="text-muted small text-center w-100 mb-0">Nos pondremos en contacto contigo lo antes posible.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

@@ -2,7 +2,7 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .functions.fcSendMessageEmail import enviar_mensaje_formulario
+from .functions.fcSendMessageEmail import *
 from .procedures import *
 from django.shortcuts import render, redirect
 from django.contrib import messages
@@ -88,7 +88,8 @@ def enviar_mensaje(request):
         try:
             # Llamar a la función para enviar el mensaje (asegúrate de que esta función esté correctamente implementada)
             enviar_mensaje_formulario(name, email, telefono, asent, proyect, message)
-
+            enviar_confirmacion_cliente(name, email)
+            # Si el mensaje se envió correctamente, mostrar un mensaje de éxito
             # Si el mensaje se envió correctamente, mostrar un mensaje de éxito
             messages.success(request, '¡Tu mensaje ha sido enviado exitosamente!')
 
@@ -101,3 +102,165 @@ def enviar_mensaje(request):
 
     # Si el método no es POST, simplemente renderizar la página de contacto
     return render(request, 'contact.html')
+
+
+def enviar_mensaje_contacto(request):
+    if request.method == 'POST':
+        # Obtener los datos del formulario
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        telefono = request.POST.get('telefono')
+
+        # Verificar si todos los campos están completos
+        if not name or not email or not telefono:
+            # Si algún campo está vacío, redirigir a error404
+            return redirect('error404')
+
+        try:
+            # Llamar a la función para enviar el mensaje (asegúrate de que esta función esté correctamente implementada)
+            enviar_mensaje_formulario_contactar(name, email, telefono)
+            enviar_confirmacion_cliente(name, email)
+            # Si el mensaje se envió correctamente, mostrar un mensaje de éxito
+            # Si el mensaje se envió correctamente, mostrar un mensaje de éxito
+            messages.success(request, '¡Tu mensaje ha sido enviado exitosamente!')
+
+            # Redirigir a la página de contacto
+            return redirect('arigato')
+
+        except Exception as e:
+            # Si hay algún error al enviar el mensaje, redirigir a error404
+            return redirect('error404')
+
+    # Si el método no es POST, simplemente renderizar la página de contacto
+    return render(request, 'pagarigato.html')
+
+
+def enviar_mensaje_contacto_web_desing_senpai(request):
+    if request.method == 'POST':
+        # Obtener los datos del formulario
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        telefono = request.POST.get('telefono')
+
+        # Verificar si todos los campos están completos
+        if not name or not email or not telefono:
+            # Si algún campo está vacío, redirigir a error404
+            return redirect('error404')
+
+        try:
+            # Llamar a la función para enviar el mensaje (asegúrate de que esta función esté correctamente implementada)
+            enviar_mensaje_formulario_contactar_web_senpai(name, email, telefono)
+            enviar_confirmacion_cliente(name, email)
+            # Si el mensaje se envió correctamente, mostrar un mensaje de éxito
+            # Si el mensaje se envió correctamente, mostrar un mensaje de éxito
+            messages.success(request, '¡Tu mensaje ha sido enviado exitosamente!')
+
+            # Redirigir a la página de contacto
+            return redirect('arigato')
+
+        except Exception as e:
+            # Si hay algún error al enviar el mensaje, redirigir a error404
+            return redirect('error404')
+
+    # Si el método no es POST, simplemente renderizar la página de contacto
+    return render(request, 'pagarigato.html')
+
+
+def enviar_mensaje_contacto_web_desing_kaiju(request):
+    if request.method == 'POST':
+        # Obtener los datos del formulario
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        telefono = request.POST.get('telefono')
+
+        # Verificar si todos los campos están completos
+        if not name or not email or not telefono:
+            # Si algún campo está vacío, redirigir a error404
+            return redirect('error404')
+
+        try:
+            # Llamar a la función para enviar el mensaje (asegúrate de que esta función esté correctamente implementada)
+            enviar_mensaje_formulario_contactar_web_kaiju(name, email, telefono)
+            enviar_confirmacion_cliente(name, email)
+            # Si el mensaje se envió correctamente, mostrar un mensaje de éxito
+            # Si el mensaje se envió correctamente, mostrar un mensaje de éxito
+            messages.success(request, '¡Tu mensaje ha sido enviado exitosamente!')
+
+            # Redirigir a la página de contacto
+            return redirect('arigato')
+
+        except Exception as e:
+            # Si hay algún error al enviar el mensaje, redirigir a error404
+            return redirect('error404')
+
+    # Si el método no es POST, simplemente renderizar la página de contacto
+    return render(request, 'pagarigato.html')
+
+
+def enviar_mensaje_contacto_server_owncloud(request):
+    if request.method == 'POST':
+        # Obtener los datos del formulario
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        telefono = request.POST.get('telefono')
+        paquete = request.POST.get('paquete')
+
+        # Verificar si todos los campos están completos
+        if not name or not email or not telefono:
+            # Si algún campo está vacío, redirigir a error404
+            return redirect('error404')
+
+        try:
+            # Llamar a la función para enviar el mensaje (asegúrate de que esta función esté correctamente implementada)
+            enviar_mensaje_formulario_servidores_owncloud(name, email, telefono, paquete)
+            # Enviar confirmación al cliente
+            enviar_confirmacion_cliente(name, email)
+            # Si el mensaje se envió correctamente, mostrar un mensaje de éxito
+            messages.success(request, '¡Tu mensaje ha sido enviado exitosamente!')
+
+            # Redirigir a la página de contacto
+            return redirect('arigato')
+
+        except Exception as e:
+            # Si hay algún error al enviar el mensaje, redirigir a error404
+            return redirect('error404')
+
+    # Si el método no es POST, simplemente renderizar la página de contacto
+    return render(request, 'pagarigato.html')
+
+
+def enviar_mensaje_devs(request):
+    if request.method == 'POST':
+        # Obtener los datos del formulario
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        telefono = request.POST.get('telefono')
+        asent = request.POST.get('asent')
+        proyect = request.POST.get('proyect')
+        message = request.POST.get('message')
+        tipo_proyecto = request.POST.get('tipo_proyecto')
+        plazo_entrega = request.POST.get('plazo_entrega')
+        expectativas = request.POST.get('expectativas')
+
+        # Verificar si todos los campos están completos
+        if not name or not email or not telefono or not asent or not proyect or not message:
+            # Si algún campo está vacío, redirigir a error404
+            return redirect('error404')
+
+        try:
+            # Llamar a la función para enviar el mensaje (asegúrate de que esta función esté correctamente implementada)
+            enviar_mensaje_formulario_devs(name, email, telefono, asent, proyect, message, tipo_proyecto, plazo_entrega, expectativas)
+            enviar_confirmacion_cliente(name, email)
+            # Si el mensaje se envió correctamente, mostrar un mensaje de éxito
+            # Si el mensaje se envió correctamente, mostrar un mensaje de éxito
+            messages.success(request, '¡Tu mensaje ha sido enviado exitosamente!')
+
+            # Redirigir a la página de contacto
+            return redirect('arigato')
+
+        except Exception as e:
+            # Si hay algún error al enviar el mensaje, redirigir a error404
+            return redirect('error404')
+
+    # Si el método no es POST, simplemente renderizar la página de contacto
+    return render(request, 'pagarigato.html')

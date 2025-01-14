@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- Info select servers options Start -->
+<div class="container-fluid offer-section py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Servidores de Archivos Owncloud</h4>
+            <h1 class="display-5 mb-4">Un lugar seguro para todos sus datos</h1>
+            <p class="mb-0">Sabemos que tus archivos son importantes para ti, por eso nuestros servidores te proporcionan el nivel de seguridad que necesitas.
+            </p>
+        </div>
+        <div class="row g-5 align-items-center">
+            <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="nav nav-pills bg-light rounded p-5">
+                    <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
+                        <h5 class="mb-0">Servidores VPS normales</h5>
+                    </a>
+                    <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
+                        <h5 class="mb-0">Servidores VPS dedicados</h5>
+                    </a>
+                    <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
+                        <h5 class="mb-0">Servidores Bare Metal</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="tab-content">
+                    <div id="collapseOne" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-md-7">
+                                <img src="{% static 'img/vps_001.jpeg' %}" class="img-fluid w-100 rounded" alt="">
+                            </div>
+                            <div class="col-md-5">
+                                <h1 class="display-5 mb-4">Servidores Owncloud con VPS normales</h1>
+                                <p class="mb-4">Con nuestro servicio de servidores en la nube, tendrás acceso rápido y seguro a tus archivos desde cualquier lugar. Utilizando OwnCloud en VPS, disfrutarás de la flexibilidad de un almacenamiento personalizado y optimizado para tus necesidades. Ya sea para almacenar archivos personales o administrar documentos profesionales.
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'servers-owncloud-normally' %}">Opciones</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-md-7">
+                                <img src="{% static 'img/vps_002.jpeg' %}" class="img-fluid w-100 rounded" alt="">
+                            </div>
+                            <div class="col-md-5">
+                                <h1 class="display-5 mb-4">Servidores Owncloud con VPS dedicadas</h1>
+                                <p class="mb-4">Maximiza el rendimiento y la seguridad de tus archivos con nuestros servidores OwnCloud en VPS dedicadas. Con un servidor dedicado, tendrás acceso exclusivo a recursos de alto rendimiento, lo que garantiza un funcionamiento más rápido y eficiente para tus necesidades de almacenamiento y gestión de archivos.
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'servers-owncloud-medium' %}">Opciones</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseThree" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-md-7">
+                                <img src="{% static 'img/vps_003.jpeg' %}" class="img-fluid w-100 rounded" alt="">
+                            </div>
+                            <div class="col-md-5">
+                                <h1 class="display-5 mb-4">Servidores Owncloud Bare Metal</h1>
+                                <p class="mb-4">Optimiza tu almacenamiento y gestión de archivos con nuestros servidores OwnCloud Bare Metal, equipados con recursos de última generación y alto rendimiento. Con un servidor físico dedicado, disfrutarás de la máxima velocidad, fiabilidad y control, sin la compartición de recursos que limitan el rendimiento. Perfecto para empresas o usuarios que necesitan potencia, seguridad avanzada y una infraestructura robusta para gestionar grandes volúmenes de datos de manera eficiente.
+                                </p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'servers-owncloud-premium' %}">Opciones</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'products-info' %}">
+            <i class="fa-solid fa-rotate-left"></i> Regresar
+        </a>
+    </div>
+</div>
+<!-- Info select servers options End -->
+
+
+{% endblock %}

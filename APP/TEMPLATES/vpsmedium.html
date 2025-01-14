@@ -1,0 +1,328 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Server Start -->
+<div class="container-fluid blog py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Servidores Owncloud VPS dedicadas</h4>
+            <h1 class="display-5 mb-4">Estabilidad garantizada con servidores dedicados de alto rendimiento</h1>
+            <p class="mb-0">Lleva tus archivos a la nube, un lugar seguro para tus datos, ten la total seguridad de ellos.
+            </p>
+        </div>
+
+        <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+            <!-- START VPS 1 -->
+            <div class="blog-item p-4">
+                <div class="blog-img mb-4">
+                    <img src="{% static 'img/packgue_05.png' %}" class="img-fluid w-100 rounded" alt="">
+                    <div class="blog-title">
+                        <a href="{% url 'services' %}" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropAkira">Contactar</a>
+                    </div>
+                </div>
+                <a class="h4 d-inline-block mb-3">Paquete Akira</a>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Opción 1: 24 GB RAM, 180 GB NVMe.
+                </p>
+                <div class="d-flex align-items-center">
+                    <img src="{% static 'img/tips_01.png' %}" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                    <div class="ms-3">
+                        <h5>
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            Adicionales
+                        </h5>
+                        <p class="mb-0">
+                            <i class="fa-solid fa-hard-drive"></i>
+                            Almacenamiento extra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- END VPS 1 -->
+
+           <!-- START VPS 2 -->
+            <div class="blog-item p-4">
+                <div class="blog-img mb-4">
+                    <img src="{% static 'img/packgue_06.png' %}" class="img-fluid w-100 rounded" alt="">
+                    <div class="blog-title">
+                        <a href="{% url 'services' %}" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropShogun">Contactar</a>
+                    </div>
+                </div>
+                <a class="h4 d-inline-block mb-3">Paquete Shogun</a>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Opción 1: 32 GB RAM, 240 GB NVMe.
+                </p>
+                <div class="d-flex align-items-center">
+                    <img src="{% static 'img/tips_01.png' %}" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                    <div class="ms-3">
+                        <h5>
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            Adicionales
+                        </h5>
+                        <p class="mb-0">
+                            <i class="fa-solid fa-hard-drive"></i>
+                            Almacenamiento extra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- END VPS 2 -->
+
+            <!-- START VPS 3 -->
+            <div class="blog-item p-4">
+                <div class="blog-img mb-4">
+                    <img src="{% static 'img/packgue_07.png' %}" class="img-fluid w-100 rounded" alt="">
+                    <div class="blog-title">
+                        <a href="{% url 'services' %}" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropHikari">Contactar</a>
+                    </div>
+                </div>
+                <a class="h4 d-inline-block mb-3">Paquete Hikari</a>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Opción 1: 48 GB RAM, 360 GB NVMe.
+                </p>
+                <div class="d-flex align-items-center">
+                    <img src="{% static 'img/tips_01.png' %}" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                    <div class="ms-3">
+                        <h5>
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            Adicionales
+                        </h5>
+                        <p class="mb-0">
+                            <i class="fa-solid fa-hard-drive"></i>
+                            Almacenamiento extra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- END VPS 3 -->
+
+            <!-- START VPS 4 -->
+            <div class="blog-item p-4">
+                <div class="blog-img mb-4">
+                    <img src="{% static 'img/packgue_08.png' %}" class="img-fluid w-100 rounded" alt="">
+                    <div class="blog-title">
+                        <a href="{% url 'services' %}" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropKensei">Contactar</a>
+                    </div>
+                </div>
+                <a class="h4 d-inline-block mb-3">Paquete Kensei</a>
+                <p class="mb-4">
+                    <i class="fa-solid fa-cat"></i>
+                    Opción 1: 96 GB RAM, 720 GB NVMe.
+                </p>
+                <div class="d-flex align-items-center">
+                    <img src="{% static 'img/tips_01.png' %}" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                    <div class="ms-3">
+                        <h5>
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            Adicionales
+                        </h5>
+                        <p class="mb-0">
+                            <i class="fa-solid fa-hard-drive"></i>
+                            Almacenamiento extra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- END VPS 4 -->
+        </div>
+        <br>
+        <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'servers-owncloud' %}">
+            <i class="fa-solid fa-rotate-left"></i> Regresar
+        </a>
+    </div>
+</div>
+
+<!-- Server End -->
+
+
+<!-- Start Modal Paquete Akira -->
+<div class="modal fade" id="staticBackdropAkira" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelAkira" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Encabezado del modal -->
+      <div class="modal-header bg-primary text-white d-flex justify-content-center position-relative">
+        <h5 class="modal-title mx-auto" id="staticBackdropLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Cuerpo del modal -->
+      <div class="modal-body">
+        <form method="POST" action="{% url 'enviar_mensaje_contacto_server_owncloud' %}">
+          {% csrf_token %}
+            <h4 class="text-primary">Paquete Akira</h4>
+          <!-- Campo Nombre -->
+          <div class="form-floating mb-3">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+            <label for="name"><i class="fa-solid fa-user me-2"></i>Nombre</label>
+          </div>
+          <!-- Campo Correo -->
+          <div class="form-floating mb-3">
+            <input type="email" name="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+            <label for="email"><i class="fa-solid fa-envelope me-2"></i>Correo</label>
+          </div>
+          <!-- Campo Teléfono -->
+          <div class="form-floating mb-3">
+            <input type="tel" name="telefono" class="form-control" id="telefono" placeholder="(000) 000 0000" required>
+            <label for="telefono"><i class="fa-solid fa-phone me-2"></i>Teléfono</label>
+          </div>
+            <!-- Campo oculto para el paquete -->
+            <input type="hidden" name="paquete" value="Akira">
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Pie del modal -->
+      <div class="modal-footer">
+        <p class="text-muted small text-center w-100 mb-0">Nos pondremos en contacto contigo lo antes posible.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal Paquete Kodoma -->
+
+<!-- Start Modal Paquete Shogun -->
+<div class="modal fade" id="staticBackdropShogun" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelShogun" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Encabezado del modal -->
+      <div class="modal-header bg-primary text-white d-flex justify-content-center position-relative">
+        <h5 class="modal-title mx-auto" id="staticBackdropLabelShogun"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Cuerpo del modal -->
+      <div class="modal-body">
+        <form method="POST" action="{% url 'enviar_mensaje_contacto_server_owncloud' %}">
+          {% csrf_token %}
+            <h4 class="text-primary">Paquete Shogun</h4>
+          <!-- Campo Nombre -->
+          <div class="form-floating mb-3">
+            <input type="text" name="name" class="form-control" id="name_Shogun" placeholder="Nombre" required>
+            <label for="name"><i class="fa-solid fa-user me-2"></i>Nombre</label>
+          </div>
+          <!-- Campo Correo -->
+          <div class="form-floating mb-3">
+            <input type="email" name="email" class="form-control" id="email_Shogun" placeholder="Correo Electrónico" required>
+            <label for="email"><i class="fa-solid fa-envelope me-2"></i>Correo</label>
+          </div>
+          <!-- Campo Teléfono -->
+          <div class="form-floating mb-3">
+            <input type="tel" name="telefono" class="form-control" id="telefono_Shogun" placeholder="(000) 000 0000" required>
+            <label for="telefono"><i class="fa-solid fa-phone me-2"></i>Teléfono</label>
+          </div>
+            <!-- Campo oculto para el paquete -->
+            <input type="hidden" name="paquete" value="Shogun">
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Pie del modal -->
+      <div class="modal-footer">
+        <p class="text-muted small text-center w-100 mb-0">Nos pondremos en contacto contigo lo antes posible.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal Paquete Shogun -->
+
+<!-- Start Modal Paquete Hikari -->
+<div class="modal fade" id="staticBackdropHikari" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelHikari" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Encabezado del modal -->
+      <div class="modal-header bg-primary text-white d-flex justify-content-center position-relative">
+        <h5 class="modal-title mx-auto" id="staticBackdropLabelHikari"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Cuerpo del modal -->
+      <div class="modal-body">
+        <form method="POST" action="{% url 'enviar_mensaje_contacto_server_owncloud' %}">
+          {% csrf_token %}
+            <h4 class="text-primary">Paquete Hikari</h4>
+          <!-- Campo Nombre -->
+          <div class="form-floating mb-3">
+            <input type="text" name="name" class="form-control" id="name_Hikari" placeholder="Nombre" required>
+            <label for="name"><i class="fa-solid fa-user me-2"></i>Nombre</label>
+          </div>
+          <!-- Campo Correo -->
+          <div class="form-floating mb-3">
+            <input type="email" name="email" class="form-control" id="email_Hikari" placeholder="Correo Electrónico" required>
+            <label for="email"><i class="fa-solid fa-envelope me-2"></i>Correo</label>
+          </div>
+          <!-- Campo Teléfono -->
+          <div class="form-floating mb-3">
+            <input type="tel" name="telefono" class="form-control" id="telefono_Hikari" placeholder="(000) 000 0000" required>
+            <label for="telefono"><i class="fa-solid fa-phone me-2"></i>Teléfono</label>
+          </div>
+            <!-- Campo oculto para el paquete -->
+            <input type="hidden" name="paquete" value="Hikari">
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Pie del modal -->
+      <div class="modal-footer">
+        <p class="text-muted small text-center w-100 mb-0">Nos pondremos en contacto contigo lo antes posible.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal Paquete Hikari -->
+
+<!-- Start Modal Paquete Kensei -->
+<div class="modal fade" id="staticBackdropKensei" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelKensei" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Encabezado del modal -->
+      <div class="modal-header bg-primary text-white d-flex justify-content-center position-relative">
+        <h5 class="modal-title mx-auto" id="staticBackdropLabelKensei"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Cuerpo del modal -->
+      <div class="modal-body">
+        <form method="POST" action="{% url 'enviar_mensaje_contacto_server_owncloud' %}">
+          {% csrf_token %}
+            <h4 class="text-primary">Paquete Kensei</h4>
+          <!-- Campo Nombre -->
+          <div class="form-floating mb-3">
+            <input type="text" name="name" class="form-control" id="name_Kensei" placeholder="Nombre" required>
+            <label for="name"><i class="fa-solid fa-user me-2"></i>Nombre</label>
+          </div>
+          <!-- Campo Correo -->
+          <div class="form-floating mb-3">
+            <input type="email" name="email" class="form-control" id="email_Kensei" placeholder="Correo Electrónico" required>
+            <label for="email"><i class="fa-solid fa-envelope me-2"></i>Correo</label>
+          </div>
+          <!-- Campo Teléfono -->
+          <div class="form-floating mb-3">
+            <input type="tel" name="telefono" class="form-control" id="telefono_Kensei" placeholder="(000) 000 0000" required>
+            <label for="telefono"><i class="fa-solid fa-phone me-2"></i>Teléfono</label>
+          </div>
+            <!-- Campo oculto para el paquete -->
+            <input type="hidden" name="paquete" value="Kensei">
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Pie del modal -->
+      <div class="modal-footer">
+        <p class="text-muted small text-center w-100 mb-0">Nos pondremos en contacto contigo lo antes posible.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal Paquete Kensei -->
+
+
+
+{% endblock %}

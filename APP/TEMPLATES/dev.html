@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Page Start -->
+<div class="container-fluid blog py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s">
+            <h4 class="text-primary">Desarrollo de Software Personalizado</h4>
+            <h1 class="display-5 mb-4">Tu visión, nuestro código</h1>
+            <p class="mb-0">Creamos soluciones a medida para tus necesidades. ¡Comparte tu idea y trabajemos juntos!</p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="bg-light p-5 rounded h-100 wow fadeInUp" data-wow-delay="0.2s">
+                    <h4 class="text-primary">Envíanos un Mensaje</h4>
+                    <form method="POST" action="{% url 'enviar_mensaje_devs' %}">
+                        {% csrf_token %}
+                        <div class="row g-4">
+                            <!-- Nombre -->
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" name="name" class="form-control border-0" id="name" placeholder="Nombre" required>
+                                    <label for="name">Nombre</label>
+                                </div>
+                            </div>
+                            <!-- Correo -->
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" name="email" class="form-control border-0" id="email" placeholder="info@example.com" required>
+                                    <label for="email">Correo</label>
+                                </div>
+                            </div>
+                            <!-- Teléfono -->
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating">
+                                    <input type="tel" name="telefono" class="form-control border-0" id="telefono" placeholder="(000) 000 0000" required>
+                                    <label for="telefono">Teléfono</label>
+                                </div>
+                            </div>
+                            <!-- Proyecto -->
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" name="proyect" class="form-control border-0" id="proyect" placeholder="Proyecto" required>
+                                    <label for="proyect">Proyecto</label>
+                                </div>
+                            </div>
+                            <!-- Asunto -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" name="asent" class="form-control border-0" id="asent" placeholder="Asunto" required>
+                                    <label for="asent">Asunto</label>
+                                </div>
+                            </div>
+                            <!-- Mensaje -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea name="message" class="form-control border-0" placeholder="Escribe tu mensaje aquí" id="message" style="height: 160px" required></textarea>
+                                    <label for="message">Mensaje</label>
+                                </div>
+                            </div>
+                            <!-- Tipo de Proyecto -->
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating">
+                                    <select name="tipo_proyecto" class="form-control border-0" id="tipo_proyecto" required>
+                                        <option value="desktop">Aplicación Desktop</option>
+                                        <option value="web">Aplicación Web</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                    <label for="tipo_proyecto">Tipo de Proyecto</label>
+                                </div>
+                            </div>
+                            <!-- Plazo de Entrega -->
+                            <div class="col-12 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" name="plazo_entrega" class="form-control border-0" id="plazo_entrega" placeholder="Plazo de Entrega" required>
+                                    <label for="plazo_entrega">Plazo de Entrega</label>
+                                </div>
+                            </div>
+                            <!-- Expectativas de Funcionalidad -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea name="expectativas" class="form-control border-0" placeholder="Cuéntanos tus expectativas sobre el proyecto" id="expectativas" style="height: 160px" required></textarea>
+                                    <label for="expectativas">Expectativas de Funcionalidad</label>
+                                </div>
+                            </div>
+                            <!-- Botón de Enviar -->
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="text-center">
+            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'products-info' %}">
+                <i class="fa-solid fa-rotate-left"></i> Regresar
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Page End -->
+
+{% endblock %}

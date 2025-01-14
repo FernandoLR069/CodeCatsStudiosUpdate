@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Products Start -->
+<div class="container-fluid team py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Productos</h4>
+            <h1 class="display-5 mb-4">Diferentes opciones para tus necesidades</h1>
+            <p class="mb-0">Code Cats Studios ofrece una variedad de productos y opciones que se adaptan a tus necesidades para lograr tus metas en  el mundo digital.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/products_01.jpeg' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="team-title">
+                        <h4 class="mb-0">Software Comercial</h4>
+                        <p class="mb-0">Optimiza tu negocio con nuestros softwares comerciales a medida, nuestros desarrollos son un gran aliado para gestionar tus operaciones de manera eficiente y profesional.</p>
+                    </div>
+                    <div class="team-icon">
+                        <a class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="{% url 'desing-web' %}">Descubrir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-item">
+                    <div class="team-img">
+                         <img src="{% static 'img/products_02.jpeg' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="team-title">
+                        <h4 class="mb-0">Páginas Web</h4>
+                        <p class="mb-0">Impulsa tu presencia en línea con páginas web diseñadas para destacar. Ya sea que necesites promocionar un negocio, servicios personales o una tienda.</p>
+                    </div>
+                    <div class="team-icon">
+                        <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'pages-web' %}">Descubrir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/products_03.jpeg' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="team-title">
+                        <h4 class="mb-0">Almacenamiento en la Nube</h4>
+                        <p class="mb-0">Mantén tus archivos seguros y accesibles con nuestros servidores en la nube con ownCloud. Perfecto para, profesionales y estudiantes.</p>
+                    </div>
+                    <div class="team-icon">
+                       <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'servers-owncloud' %}">Descubrir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/products_04.jpeg' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="team-title">
+                        <h4 class="mb-0">Software a Medida</h4>
+                        <p class="mb-0">Transforma tus ideas en soluciones únicas con nuestro desarrollo de software a medida. Desde aplicaciones web hasta herramientas específicas para tu negocio.</p>
+                    </div>
+                    <div class="team-icon">
+                        <a class="btn btn-primary rounded-pill py-2 px-4"  href="{% url 'software-development-devs' %}">Descubrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Products End -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Productos</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-center mb-3">
+          <img src="{% static 'img/matenimiento.png' %}"  alt="Imagen de mantenimiento" class="img-fluid">
+        </div>
+         <h4 class="text-primary" align="center">¡Lo sentimos este apartado esta en mantenimiento!</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

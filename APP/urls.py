@@ -12,7 +12,15 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('vermensajes_sms/', views.mensajes_view, name='messaje_send'),
     path('servers-info/', views.owncloudinfor, name='servers-info'),
+    path('products-info/', views.productsinfo, name='products-info'),
+    path('pages-web/', views.pagesweb, name='pages-web'),
+    path('servers-owncloud/', views.serverowncloud, name='servers-owncloud'),
+    path('servers-owncloud-normally/', views.pagevpsbasic, name='servers-owncloud-normally'),
+    path('servers-owncloud-medium/', views.pagevpsdedic, name='servers-owncloud-medium'),
+    path('servers-owncloud-premium/', views.pagevpsbaremetal, name='servers-owncloud-premium'),
+    path('software-development-devs/', views.devs, name='software-development-devs'),
     path('error404/', views.pageerror404, name='error404'),
+    path('arigato/', views.pagearigato, name='arigato'),
 ]
 
 # Manejador de errores 404

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid py-5 bg-light">
+    <div class="container text-center">
+        <!-- Título del mensaje -->
+        <h4 class="text-primary fw-bold mb-3">Tu mensaje fue enviado correctamente</h4>
+
+
+        <!-- Imagen de agradecimiento -->
+        <div class="fadeInUp" data-wow-delay="0.2s">
+            <img src="{% static 'img/tanks_01.png' %}" class="img-fluid rounded mx-auto d-block" alt="">
+        </div>
+
+        <!-- Botón de regreso -->
+        <br>
+        <a class="btn btn-primary rounded-pill py-3 px-5" href="/">Regresar a inicio</a>
+    </div>
+</div>
+
+
+{% endblock %}

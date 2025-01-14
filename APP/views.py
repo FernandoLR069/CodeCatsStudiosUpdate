@@ -33,6 +33,38 @@ def owncloudinfor(request):
     return render(request, 'owncloudinfo.html')
 
 
+def productsinfo(request):
+    return render(request, 'productos.html')
+
+
+def pagesweb(request):
+    return render(request, 'paginasweb.html')
+
+
+def serverowncloud(request):
+    return render(request, 'serversownclod.html')
+
+
+def pagearigato(request):
+    return render(request, 'pagarigato.html')
+
+
+def pagevpsbasic(request):
+    return render(request, 'vpsbasic.html')
+
+
+def pagevpsdedic(request):
+    return render(request, 'vpsmedium.html')
+
+
+def pagevpsbaremetal(request):
+    return render(request, 'vpspremium.html')
+
+
+def devs(request):
+    return render(request, 'dev.html')
+
+
 def pageerror404(request):
     return render(request, '404.html')
 
